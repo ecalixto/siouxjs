@@ -1,0 +1,322 @@
+{
+    "project": {},
+    "files": {
+        "siouxjs\\display\\popup\\PopupManager.ts": {
+            "name": "siouxjs\\display\\popup\\PopupManager.ts",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "siouxjs\\ui\\Scale3Bitmap.ts": {
+            "name": "siouxjs\\ui\\Scale3Bitmap.ts",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "siouxjs\\ui\\Scale9Bitmap.ts": {
+            "name": "siouxjs\\ui\\Scale9Bitmap.ts",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "siouxjs\\Application.ts": {
+            "name": "siouxjs\\Application.ts",
+            "modules": {
+                "siouxjs": 1
+            },
+            "classes": {
+                "Application": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "siouxjs\\Framework.ts": {
+            "name": "siouxjs\\Framework.ts",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "siouxjs": {
+            "name": "siouxjs",
+            "submodules": {},
+            "classes": {
+                "Application": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "siouxjs\\Application.ts",
+            "line": 9,
+            "description": "Provides the base Widget class..."
+        }
+    },
+    "classes": {
+        "Application": {
+            "name": "Application",
+            "shortname": "Application",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "siouxjs",
+            "namespace": "",
+            "file": "siouxjs\\Application.ts",
+            "line": 9,
+            "description": "Base class for an application",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "siouxjs\\display\\popup\\PopupManager.ts",
+            "line": 71,
+            "description": "Remove and destroy a popup created by the PopupManager",
+            "params": [
+                {
+                    "name": "popup",
+                    "description": ""
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\display\\popup\\PopupManager.ts",
+            "line": 94,
+            "description": "Remove all popups, even the popups on queue",
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale3Bitmap.ts",
+            "line": 14,
+            "description": "Cria imagens 9 grid",
+            "params": [
+                {
+                    "name": "imageOrUri",
+                    "description": "Image base para a imagem 9Grid",
+                    "type": "Image"
+                },
+                {
+                    "name": "nX1",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "nX2",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "bScaleTextura",
+                    "description": "se for TRUE, ser� aplicado 1x, 2x, etc. na imagem",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale3Bitmap.ts",
+            "line": 48,
+            "description": "Changes the dimensions used the draw the ScaleBitmap.",
+            "itemtype": "method",
+            "name": "setDrawSize",
+            "params": [
+                {
+                    "name": "newWidth",
+                    "description": "The new width of the drawn ScaleBitmap.",
+                    "type": "Number"
+                },
+                {
+                    "name": "newHeight",
+                    "description": "The new height of the drawn ScaleBitmap.",
+                    "type": "Number"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale3Bitmap.ts",
+            "line": 61,
+            "description": "Desenha",
+            "itemtype": "method",
+            "name": "draw",
+            "params": [
+                {
+                    "name": "ctx",
+                    "description": "",
+                    "type": "CanvasRenderingContext2D"
+                },
+                {
+                    "name": "ignoreCache",
+                    "description": "",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale3Bitmap.ts",
+            "line": 108,
+            "description": "Retorna o texto",
+            "itemtype": "method",
+            "name": "toString",
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale9Bitmap.ts",
+            "line": 13,
+            "description": "Cria imagens 9 grid",
+            "params": [
+                {
+                    "name": "imageOrUri",
+                    "description": "Image base para a imagem 9Grid",
+                    "type": "Image"
+                },
+                {
+                    "name": "scale9Grid",
+                    "description": "Grid que seré aplicado na imagem base. Atenção! A largura e Altura é o tamanho do segmento da imagem que ser� scalonavel.",
+                    "type": "createjs.Rectangle"
+                },
+                {
+                    "name": "bScaleTextura",
+                    "description": "se for TRUE, ser� aplicado 1x, 2x, etc. na imagem",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale9Bitmap.ts",
+            "line": 44,
+            "description": "Changes the dimensions used the draw the ScaleBitmap.",
+            "itemtype": "method",
+            "name": "setDrawSize",
+            "params": [
+                {
+                    "name": "newWidth",
+                    "description": "The new width of the drawn ScaleBitmap.",
+                    "type": "Number"
+                },
+                {
+                    "name": "newHeight",
+                    "description": "The new height of the drawn ScaleBitmap.",
+                    "type": "Number"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale9Bitmap.ts",
+            "line": 58,
+            "description": "Desenha",
+            "itemtype": "method",
+            "name": "draw",
+            "params": [
+                {
+                    "name": "ctx",
+                    "description": "",
+                    "type": "CanvasRenderingContext2D"
+                },
+                {
+                    "name": "ignoreCache",
+                    "description": "",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\ui\\Scale9Bitmap.ts",
+            "line": 131,
+            "description": "Retorna o texto",
+            "itemtype": "method",
+            "name": "toString",
+            "class": "Application"
+        },
+        {
+            "file": "siouxjs\\Application.ts",
+            "line": 21,
+            "description": "Dictionary with all application's canvas",
+            "itemtype": "property",
+            "name": "canvas",
+            "type": "{ICanvasMap}",
+            "class": "Application",
+            "module": "siouxjs"
+        },
+        {
+            "file": "siouxjs\\Application.ts",
+            "line": 31,
+            "description": "Manager of application's popups",
+            "itemtype": "property",
+            "name": "popups",
+            "type": "{siouxjs.PopupManager}",
+            "class": "Application",
+            "module": "siouxjs"
+        },
+        {
+            "file": "siouxjs\\Application.ts",
+            "line": 41,
+            "description": "Manager of application's scenes",
+            "itemtype": "property",
+            "name": "sceneManager",
+            "type": "{siouxjs.SceneManager}",
+            "class": "Application",
+            "module": "siouxjs"
+        },
+        {
+            "file": "siouxjs\\Application.ts",
+            "line": 81,
+            "description": "Update all application's canvas",
+            "itemtype": "method",
+            "name": "update",
+            "return": {
+                "description": "none"
+            },
+            "class": "Application",
+            "module": "siouxjs"
+        },
+        {
+            "file": "siouxjs\\Application.ts",
+            "line": 93,
+            "description": "Add a canvas object to application",
+            "itemtype": "method",
+            "name": "setCanvas",
+            "params": [
+                {
+                    "name": "pCanvas",
+                    "description": "Canvas to be added",
+                    "type": "Canvas"
+                }
+            ],
+            "return": {
+                "description": "none"
+            },
+            "class": "Application",
+            "module": "siouxjs"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nRemove and destroy a popup created by the PopupManager",
+            "line": " siouxjs\\display\\popup\\PopupManager.ts:71"
+        },
+        {
+            "message": "Missing item type\nRemove all popups, even the popups on queue",
+            "line": " siouxjs\\display\\popup\\PopupManager.ts:94"
+        },
+        {
+            "message": "Missing item type\nCria imagens 9 grid",
+            "line": " siouxjs\\ui\\Scale3Bitmap.ts:14"
+        },
+        {
+            "message": "Missing item type\nCria imagens 9 grid",
+            "line": " siouxjs\\ui\\Scale9Bitmap.ts:13"
+        }
+    ]
+}

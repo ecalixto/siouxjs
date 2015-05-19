@@ -1,0 +1,15 @@
+﻿body, html {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+canvas {
+    position: fixed;
+    top:0px;
+    left:0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
