@@ -13,7 +13,7 @@ module SiouxJs {
             document.addEventListener('deviceready', onDeviceReady, false);
         }
 
-        function onDeviceReady() {
+        export function onDeviceReady() {
             // Handle the Cordova pause and resume events
             document.addEventListener('pause', onPause, false);
             document.addEventListener('resume', onResume, false);

@@ -23,6 +23,7 @@ var SiouxJs;
             myapp = new MyApp.MyApplication();
             siouxjs.initialize(myapp);
         }
+        Application.onDeviceReady = onDeviceReady;
         function onPause() {
             // TODO: This application has been suspended. Save application state here.
             myapp.pause();
@@ -212,6 +213,13 @@ var siouxjs;
                 this._canvas[key].update();
             }
         };
+        /**
+         * Add a canvas object to application
+         *
+         * @method setCanvas
+         * @param pCanvas {Canvas} Canvas to be added
+         * @return none
+         */
         Application.prototype.setCanvas = function (pCanvas) {
             this._canvas[pCanvas.idCanvas] = pCanvas;
         };
@@ -977,6 +985,11 @@ var siouxjs;
     })();
     siouxjs.Canvas = Canvas;
 })(siouxjs || (siouxjs = {}));
+/**
+ * Provides the base Widget class...
+ *
+ * @module siouxjs
+ */
 var siouxjs;
 (function (siouxjs) {
     "use strict";
